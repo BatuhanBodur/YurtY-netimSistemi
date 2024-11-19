@@ -10,13 +10,87 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <style>.container-center {
-            max-width: 800px; /* Set your desired width */
-            width: 100%;
-            margin: 0 auto; /* Automatically apply equal margins on both sides */
-            text-align: center;
-        }
-        
+        <style>
+            .container-center {
+                max-width: 1200px; /* Set a larger width for the content area */
+                width: 100%;
+                margin: 0 auto; /* Automatically apply equal margins on both sides */
+                text-align: center;
+            }
+
+            /* Only change background color of sidebar items and navbar items on hover */
+            .list-group-item {
+                color: black !important; /* Default text color */
+            }
+
+            .list-group-item:hover {
+                background-color: #007bff !important; /* Blue color on hover */
+                color: white !important; /* White text on hover */
+            }
+
+            .nav-link {
+                color: black !important; /* Default text color */
+            }
+
+            .nav-link:hover {
+                background-color: #007bff !important; /* Blue background on hover */
+                color: white !important; /* White text on hover */
+            }
+
+            .dropdown-item {
+                color: black !important; /* Default text color */
+            }
+
+            .dropdown-item:hover {
+                background-color: #007bff !important; /* Blue background on hover */
+                color: white !important; /* White text on hover */
+            }
+
+            /* Announcement card style */
+            .announcement-card {
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                padding: 20px;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            .announcement-card img {
+                width: 100%; /* Full width for the image */
+                height: auto;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+
+            .announcement-card h5 {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+
+            .announcement-card p {
+                font-size: 1rem;
+                color: #6c757d;
+            }
+
+            .announcement-card .btn {
+                background-color: #007bff;
+                color: white;
+                border: none;
+            }
+
+            .announcement-card .btn:hover {
+                background-color: #0056b3;
+            }
+
+            /* Styling the Duyurular heading */
+            h1.mt-4 {
+                background-color: #007bff; /* Blue background */
+                color: white; /* White text */
+                padding: 15px; /* Padding around the text */
+                border-radius: 5px; /* Optional: rounded corners */
+                margin-bottom: 30px; /* Space below the heading */
+            }
         </style>
     </head>
     <body>
@@ -46,7 +120,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active"><a class="nav-link" href="#!">Ana Sayfa</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">Destek</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profil</a>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -62,18 +136,70 @@
                 <!-- Page content-->
                 <div class="container-center">
                     <h1 class="mt-4">DUYURULAR</h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>
-                        Make sure to keep all page content within the
-                        <code>#page-content-wrapper</code>
-                        . The top navbar is optional, and just for demonstration. Just create an element with the
-                        <code>#sidebarToggle</code>
-                        ID which will toggle the menu when clicked.
-                    </p>
+
+                    <div class="row">
+                        <!-- Announcement card 1 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 1 Görseli">
+                                <h5>Duyuru 1</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                        <!-- Announcement card 2 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 2 Görseli">
+                                <h5>Duyuru 2</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                        <!-- Announcement card 3 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 3 Görseli">
+                                <h5>Duyuru 3</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <!-- Announcement card 4 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 4 Görseli">
+                                <h5>Duyuru 4</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                        <!-- Announcement card 5 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 5 Görseli">
+                                <h5>Duyuru 5</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                        <!-- Announcement card 6 -->
+                        <div class="col-md-4">
+                            <div class="announcement-card">
+                                <img src="https://via.placeholder.com/350x200" alt="Duyuru 6 Görseli">
+                                <h5>Duyuru 6</h5>
+                                <p>Bu duyuru içerik hakkında bilgi verir. Daha fazla bilgi için ilgili linki ziyaret edebilirsiniz.</p>
+                                <a href="#!" class="btn">Detaylar</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

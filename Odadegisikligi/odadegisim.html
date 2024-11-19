@@ -27,6 +27,12 @@
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .form-section h4, .table-section h4 {
+            background-color: #007bff; /* Mavi arka plan */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
         .equal-height {
             display: flex;
             flex-wrap: wrap;
@@ -39,6 +45,13 @@
         }
         h2 {
             text-align: center;
+            background-color: #007bff; /* Mavi arka plan */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem; /* Daha küçük font boyutu */
+            word-wrap: break-word; /* Metnin taşmasını engeller */
+            width: 100%; /* Başlığı tam genişlikte yapar */
         }
         .btn-create {
             font-size: 16px;
@@ -48,6 +61,19 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        /* Tablo Düzenlemeleri */
+        .table-section table {
+            width: 100%;
+            table-layout: fixed; /* Hücrelerin genişliğini eşitle */
+            font-size: 0.9rem; /* Yazı boyutunu küçültüyoruz */
+        }
+
+        .table-section th, .table-section td {
+            padding: 8px; /* Hücre içi boşluğu küçültüyoruz */
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
